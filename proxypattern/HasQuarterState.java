@@ -11,6 +11,12 @@ public class HasQuarterState implements State{
     public HasQuarterState(GumBallMachine gumBallMachine) {
         this.gumBallMachine = gumBallMachine;
     }
+
+    public GumBallMachine getGumBallMachine() {
+        return gumBallMachine;
+    }
+    
+    
         
     @Override
     public void insertQuarter() {
@@ -21,6 +27,10 @@ public class HasQuarterState implements State{
     public void turnCranck() {
         System.out.println("Your quarter is accepted.");
         if(gumBallMachine.getWinnerCountBalls() == 2){
+            
+            
+            
+            
             gumBallMachine.setState(gumBallMachine.getWinnerState());            
         }
         else
@@ -41,6 +51,6 @@ public class HasQuarterState implements State{
     }
     
     public String toString(){
-        return "Has a quarter. In process of selling.";
+        return "Has a quarter. In the process of selling gumball.";
     }
 } 
