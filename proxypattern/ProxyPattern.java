@@ -12,6 +12,10 @@ public class ProxyPattern {
         
         machine.insertQuater();      
         machine.turnCranck();
+        machine.insertQuater();      
+        machine.turnCranck();
+        machine.insertQuater();      
+        machine.turnCranck();
         
         
         monitor.report();
